@@ -1,0 +1,160 @@
+
+// -----------------------------------------------------------------------------
+// This file contains custom scss homepage.
+// -----------------------------------------------------------------------------
+
+// Hero
+#hero{
+	margin-top: 50px;
+	.btn-play{
+		height: 80px;
+		width: 80px;
+		border-radius:50%;
+		background:var(--bs-purple);
+		z-index: 3;
+		.feather {
+			fill: $color-negro-0;
+		}
+
+	}
+	.hero{
+		&--body{
+			z-index: 1;
+			h1{
+				@include font-set($font, 5rem, 700, var(--bs-purple), 0, 0.5);
+			}
+			h6{
+				@include font-set($font, $size-36, 400, var(--bs-orange), 0, 1);
+			}
+			p{
+				@include font-set($font, $size-18, 400, var(--bs-purple) !important, 0, 2);
+			}
+		}
+	}
+
+}
+#feel{
+	padding-bottom: 6rem;
+	overflow: hidden;
+	position:relative;
+	background: url('/assets/images/Asset-910-1.png') no-repeat;
+	background-size:20%;
+
+
+}
+#terapias{
+    overflow-x: hidden;
+    margin-bottom: 4rem;
+    background: linear-gradient(to bottom,rgba(101,18,94,.05) 0,#fff 100%);
+    .card{
+    	h6{
+    		letter-spacing: 2px;
+    		margin-bottom: 1rem;
+    	}
+    	h2{
+    		position:relative;
+    		display: inline-block;
+    		&::before{
+    			content: '';
+    			background:var(--bs-orange);
+    			height: 3px;
+    			width: 100%;
+    			position: absolute;
+    			bottom:-1rem;
+    			left: 0;
+    		}
+    	}
+    	a{
+    		font-size: $size-24;
+    		&:hover{
+    			text-decoration: none;
+    		}
+    	}
+	    &.ratio{
+	    	.img-card{
+	    		object-fit: cover;
+	    		overflow: hidden;
+	    		border-radius: 3px;
+	    		img{
+	    			height: auto;
+	    		}
+	    		+ div{
+	    			z-index: 12;
+	    		}
+	    	}
+
+	    }
+
+    }
+}
+#parallax{
+	padding: 10rem 0;
+	figure{
+		position:relative;
+		z-index: 1;
+	}
+}
+#talleres{
+	background:var(--bs-purple-dark) url('/assets/images/Asset-910-2.png') no-repeat;
+	background-size:30%;
+	background-position: right;
+	padding-bottom:16rem;
+	.card{
+		border-radius:0;
+		background: transparent;
+		h4{
+			font-size: $size-20;
+		}
+		.card-text{
+			font-size:$size-13;
+			line-height:1.3;
+		}
+		.feather {
+			stroke: var(--bs-orange)
+		}
+		a{
+			font-size: $size-14;
+			position:relative;
+			&:hover{
+				text-decoration: none;
+			}
+			&::before{
+				content: '';
+    			background:var(--bs-orange);
+    			height: 2px;
+    			width: 50%;
+    			position: absolute;
+    			bottom:-0.4rem;
+    			left: 13%;
+			}
+		}
+
+	}
+}
+#agenda{
+	background:url('/assets/images/bg-point.svg') no-repeat;
+	background-position:70% 100%;
+	padding-bottom: 6rem;
+	.card{
+		margin-top: -10rem;
+		position:relative;
+		z-index: 10;
+	}
+}
+#productos{
+	background: linear-gradient(to bottom,#fff 0 ,rgba(101,18,94,.1)  100%);
+	padding-bottom: 4rem;
+	.card{
+		a{
+			padding: 0.6rem 1rem;
+			background: var(--bs-orange);
+			color:$color-negro-0;
+			border-radius:50px;
+			margin-bottom: 1rem;
+			display: inline-block;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

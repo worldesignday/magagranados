@@ -1,0 +1,101 @@
+
+// -----------------------------------------------------------------------------
+// This file contains custom scss homepage.
+// -----------------------------------------------------------------------------
+
+//nav
+.navbar{
+	//border-bottom:1px solid $color-negro-5;
+	@media (min-width: $break-lg) {
+		padding: 1.5rem 0;
+	}
+	padding:.5rem 0;
+	position:relative;
+	.navbar-brand {
+		z-index: 1;
+		top: 0;
+		@media (min-width: $break-lg) {
+			position:absolute;
+		}
+	}
+
+}
+.nav-link{
+	@include font-set($font, $size-12, 500, var(--bs-purple) !important, 2px, 1);
+	text-transform: uppercase;
+	position:relative;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.nav-link:before,
+.nav-link:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: tomato;
+  transition: .3s;
+}
+
+.nav-link:before {
+  left: 50%;
+}
+
+.nav-link:after {
+  right: 50%;
+}
+
+.nav-link:hover:before,
+.nav-link:hover:after {
+  width: 46%;
+}
+
+.nav-link-dropdown{
+	@include font-set($font, $size-12, 500, var(--bs-purple) !important, 2px, 1);
+	text-transform: uppercase;
+	&::after{
+		border-top:.4em solid var(--bs-orange);
+	}
+	&:hover{
+		text-decoration: none;
+		color: tomato !important;
+	}
+}
+.navbar-expand-lg .navbar-nav > li.dropdown > a,
+.navbar-expand-lg .navbar-nav > li.dropdown > a:focus,
+.navbar-expand-lg .navbar-nav > li.dropdown > a:active {
+  background-color: transparent !important;
+  outline: none;
+  text-decoration: none
+}
+
+//ratio
+.ratio-5x4 {
+    --aspect-ratio: calc(5 / 4 * 100%);
+    @media (max-width: $break-lg) {
+    	--aspect-ratio: calc(3 / 4 * 100%);
+    }
+}
+
+.phone{
+	color:var(--bs-purple);
+	font-weight: 700;
+	font-size: $size-13;
+	&:hover{
+		color:var(--bs-orange);
+	}
+	.feather {
+	  	width: 16px;
+	  	height: 16px;
+	  	stroke: var(--bs-success);
+	  	stroke-width: 2;
+	  	stroke-linecap: round;
+	  	stroke-linejoin: round;
+	  	fill: none;
+	  	margin-right: 0.5rem;
+	}
+
+}
+
