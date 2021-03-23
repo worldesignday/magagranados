@@ -52,6 +52,7 @@
     		margin-bottom: 1rem;
     	}
     	h2{
+    		font-family: $font;
     		position:relative;
     		display: inline-block;
     		&::before{
@@ -139,10 +140,13 @@
 		margin-top: -10rem;
 		position:relative;
 		z-index: 10;
+		.feather {
+			width: 18px;
+
+		}
 	}
 }
 #productos{
-	background: linear-gradient(to bottom,#fff 0 ,rgba(101,18,94,.1)  100%);
 	padding-bottom: 4rem;
 	.card{
 		a{

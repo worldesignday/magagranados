@@ -6,209 +6,182 @@
 extends pug/page-templates/tpl_master.pug
 
 block title
-    title Maga Granados - Poder Natural
+	title Maga Granados - Poder Natural
 block contenido
-    .main
-        include pug/template-parts/block-hero.pug 
-        section#feel.mt-5.pb-5
-            .container
-                .row.text-center.d-flex.justify-content-center.mb-5
-                    h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5 Aprende a vivir
-                    h1.text-purple Hoy 
-                        span.fw-bold ¿Cómo me siento?
-                    .col-12.col-md-7
-                        p.text-muted
-                            |Todo proceso de sanación y/o aprender a vivir a plenitud implica la realización de un trabajo interior.
-                .row.gx-5.row-cols-2
-                    .col.d-none.d-sm-block
-                        p.text-center.fw-bold.text-danger(data-aos="fade-up") 1.
-                    .col.d-none.d-sm-block
-                        p.text-center.fw-bold.text-danger(data-aos="fade-up" data-aos-delay="250")  2.
-                    .col-12.col-md-6.mb-4.mb-sm-0(data-aos="fade-up" ) 
-                         p.text-muted
-                            |<span class="text-dark fw-bold">El primer paso es conocerte</span>, ¿Cómo? Observándote, cuestionándote y escuchándote que esto se hace de manera consciente cuando estás cansado de sufrir porque te das cuenta que no estás satisfecho con los resultados de tu vida ya sea en tu salud, en tu oficio o profesión, en tus finanzas o en el lugar donde vives que son las cuatro áreas en las cuales vinimos a trabajar.
-
-                    .col-12.col-md-6(data-aos="fade-up" data-aos-delay="250")
-                        p.text-muted
-                            |<span class="text-dark fw-bold">Una vez tu tomas la decisión</span> de generar un cambio en tu vida necesitas reconocer tu sombra, ego o personalidad para que puedas saber sobre que aspectos debes trabajar interiormente y así poder cambiar tus resultados en el exterior reconociendo en ti todo el potencial para gestar ese cambio ya que tú eres el único responsable de tu vida por lo tanto de tu felicidad.
-
-        section#terapias.pt-5.pb-5.mt-0.mt-sm-5.position-relative
-            .container
-                .row.text-center.d-flex.justify-content-center.mb-5
-                    h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5.mt-5 equilibra tu vida
-                    h1.text-purple Conecta 
-                        span.fw-bold con tu esencia
-                    .col-12.col-md-10
-                        p.text-muted.pt-5(data-aos="fade") 
-                            |Con las <span class="text-dark fw-bold">terapias alternativas y/o complementarias</span> puedes sanar y equilibrar tu cuerpo físico, emocional, mental y espiritual; ya que abarcan diferentes técnicas que promueven la salud con tratamientos que mejoran el estado general de la persona y también previenen la enfermedad por medio de un diagnostico oportuno, brindando herramientas que le permitan a la persona ser consciente de sus resultados para que pueda generar los cambios necesarios que transformen su vida de manera integral.
-        
-                .row
-                    .col-12.position-relative(data-aos="fade-left") 
-                        .swiper-container2
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    .card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
-                                        .position-absolute.img-card
-                                            img(src="/assets/images/reiki.jpg" class="h-100")
-                                        .d-flex.align-items-center
-                                            .col.text-center
-                                                h6.text-white.text-uppercase.fw-light Terapia
-                                                h2
-                                                    a(href="" class="text-white stretched-link") Reiki
-                                .swiper-slide 
-                                    .card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
-                                        .position-absolute.img-card
-                                            img(src="/assets/images/auroculoterapia.jpg" class="w-100")
-                                        .d-flex.align-items-center
-                                            .col.text-center
-                                                h6.text-white.text-uppercase.fw-light Terapia
-                                                h2 
-                                                    a(href="" class="text-white stretched-link") Auriculoterapia
-                                .swiper-slide 
-                                    .card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
-                                        .position-absolute.img-card
-                                            img(src="/assets/images/masaje.jpg" class="")
-                                        .d-flex.align-items-center
-                                            .col.text-center
-                                                h6.text-white.text-uppercase.fw-light Masaje
-                                                h2 
-                                                    a(href="" class="text-white stretched-link") Tuna y Maxibustion
-                                .swiper-slide 
-                                    .card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
-                                        .position-absolute.img-card
-                                            img(src="/assets/images/filtros.jpg" class="")
-                                        .d-flex.align-items-center
-                                            .col.text-center
-                                                h6.text-white.text-uppercase.fw-light Terapia
-                                                h2 
-                                                    a(href="" class="text-white stretched-link") con Filtros                       
-                            .swiper-pagination.mt-3(style="bottom:initial")
-            .position-absolute.w-100.shape--jarallax-top.d-none.d-sm-block
-                .shape.shape-top.w-100
-                    img(src="/assets/images/top-parallax.svg" class="img-fluid")
-        section#parallax.overlay.overlay-black.overlay-40.jarallax(data-jarallax='' data-speed='.8' style='background-image: url(/assets/images/bg-parallax.jpg);')
-            .container.position-relative
-                .row.gx-5.justify-content-center
-                    .col-12.col-md-7
-                        figure.text-center
-                          blockquote.blockquote
-                            h6.text-uppercase.mb-3.text-white Poder natural
-                            h2.fw-light.text-white.display-6 Este día te regala la oportunidad de
-                                span.fw-bold.d-block ser mejor que ayer
-                          figcaption.blockquote-footer.text-white
-                            | Someone famous in 
-                            cite(title='Source Title') Source Title
-            
-        section#talleres.position-relative
-            .container
-                .row.text-center.d-flex.justify-content-center.mb-5
-                    h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5.mt-5 Talleres
-                    h1.text-white Inicia tu propio 
-                        span.fw-bold camino
-                    .col-12.col-md-7
-                        p.text-white
-                            |Todo proceso de sanación y/o aprender a vivir a plenitud implica la realización de un trabajo interior.
-                .row.row-cols-4.g-5
-                    .col-sm-3.col-12
-                        .card.text-center.position-realtive
-                            img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
-                            .card-body
-                                h6.text-orange.text-uppercase Taller
-                                h4.card-title.text-white
-                                    |Reiki Universal
-                                .card-text.text-muted.pb-3
-                                    |Some quick example text to build on the card title and make up the bulk of the card's content.
-                                a(href="" class="text-white stretched-link" )
-                                    |Ver más
-                                    i(class="d-md-inline ms-1" data-feather="arrow-right")
-                    .col-sm-3.col-12
-                        .card.text-center.position-realtive
-                            img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
-                            .card-body
-                                h6.text-orange.text-uppercase Taller
-                                h4.card-title.text-white
-                                    |Cristales para sanar
-                                .card-text.text-muted.pb-3
-                                    |Some quick example text to build on the card title and make up the bulk of the card's content.
-                                a(href="" class="text-white stretched-link" )
-                                    |Ver más
-                                    i(class="d-md-inline ms-1" data-feather="arrow-right")
-                    .col-sm-3.col-12
-                        .card.text-center.position-realtive
-                            img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
-                            .card-body
-                                h6.text-orange.text-uppercase Taller
-                                h4.card-title.text-white
-                                    |Arcángeles y Cristales 
-                                .card-text.text-muted.pb-3
-                                    |Some quick example text to build on the card title and make up the bulk of the card's content.
-                                a(href="" class="text-white stretched-link" )
-                                    |Ver más
-                                    i(class="d-md-inline ms-1" data-feather="arrow-right")
-                    .col-sm-3.col-12
-                        .card.text-center.position-realtive
-                            img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
-                            .card-body
-                                h6.text-orange.text-uppercase Taller
-                                h4.card-title.text-white
-                                    |Cristales para sanar
-                                .card-text.text-muted.pb-3
-                                    |Some quick example text to build on the card title and make up the bulk of the card's content.
-                                a(href="" class="text-white stretched-link" )
-                                    |Ver más
-                                    i(class="d-md-inline ms-1" data-feather="arrow-right")
-            .position-absolute.w-100.shape--jarallax.d-none.d-sm-block
-                .shape.shape-bottom.w-100
-                    img(src="/assets/images/bottom-parallax.svg" class="img-fluid")
-        section#agenda
-            .container
-                .row.justify-content-center
-                    .col-12.col-md-10.col-lg-8.col-xl-6
-                        // Card
-                        .card.border-0.shadow-light-lg(data-aos="fade-up")
-                            .card-body
-                                .row.justify-content-center
-                                    .col-12.col-xl-11.text-center.pt-5
-                                        h1.text-purple ¿Tienes 
-                                            span.fw-bold dudas?
-                                        // Text
-                                        p.text-muted
-                                          | Agenda una cita para atender a tus inquietudes
-                                .row
-                                    .col-12.col-xl-11.text-center
-                                       .calendly-inline-widget(data-url='https://calendly.com/endigital/reunion-de-15-minutos-clon?hide_event_type_details=1' style='min-width:320px;height:420px;')
-        section#productos
-            .container
-                .row.text-center.d-flex.justify-content-center.mb-5
-                    h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5 Productos
-                    h1.text-purple Productos 
-                        span.fw-bold Complementarios
-                    .col-12.col-md-7
-                        p.text-muted
-                            |Todo proceso de sanación y/o aprender a vivir a plenitud implica la realización de un trabajo interior.
-                .row.row-cols-2.g-5.justify-content-center
-                    .col-12.col-md-4(data-aos="fade-up")
-                        .card.text-center.shadow-light-lg.lift.lift-lg.border-0
-                            img(src="/assets/images/joyas.png")
-                            .card-body
-                                h4.card-title.text-purple.fw-bold
-                                    |Joyas con Cristales
-                                p.text-muted
-                                    |Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.
-                                a(href="" class="stretched-link" )
-                                    |Consultar
+	.main
+		include pug/template-parts/block-hero.pug 
+		section#feel.mt-5.pb-5
+			.container
+				.row.text-center.d-flex.justify-content-center.mb-5
+					h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5 Aprende a vivir
+					h1.text-purple Hoy 
+						span.fw-bold ¿Cómo me siento?
+					.col-12.col-md-7
+						p.text-muted
+							|Todo proceso de sanación y/o aprender a vivir a plenitud implica la realización de un trabajo interior.
+				.row.gx-5.row-cols-2
+					.col.d-none.d-sm-block
+						p.text-center.fw-bold.text-danger(data-aos="fade-up") 1.
+					.col.d-none.d-sm-block
+						p.text-center.fw-bold.text-danger(data-aos="fade-up" data-aos-delay="250")  2.
+					.col-12.col-md-6.mb-4.mb-sm-0(data-aos="fade-up" ) 
+						p.text-muted
+							|<span class="text-dark fw-bold">El primer paso es conocerte</span>, ¿Cómo? Observándote, cuestionándote y escuchándote que esto se hace de manera consciente cuando estás cansado de sufrir porque te das cuenta que no estás satisfecho con los resultados de tu vida ya sea en tu salud, en tu oficio o profesión, en tus finanzas o en el lugar donde vives que son las cuatro áreas en las cuales vinimos a trabajar.
+
+					.col-12.col-md-6(data-aos="fade-up" data-aos-delay="250")
+						p.text-muted
+							|<span class="text-dark fw-bold">Una vez tu tomas la decisión</span> de generar un cambio en tu vida necesitas reconocer tu sombra, ego o personalidad para que puedas saber sobre que aspectos debes trabajar interiormente y así poder cambiar tus resultados en el exterior reconociendo en ti todo el potencial para gestar ese cambio ya que tú eres el único responsable de tu vida por lo tanto de tu felicidad.
+
+		section#terapias.pt-5.pb-5.mt-0.mt-sm-5.position-relative
+			.container
+				.row.text-center.d-flex.justify-content-center.mb-5
+					h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5.mt-5 equilibra tu vida
+					h1.text-purple Conecta 
+						span.fw-bold con tu esencia
+					.col-12.col-md-10
+						p.text-muted.pt-5(data-aos="fade") 
+							|Con las <span class="text-dark fw-bold">terapias alternativas y/o complementarias</span> puedes sanar y equilibrar tu cuerpo físico, emocional, mental y espiritual; ya que abarcan diferentes técnicas que promueven la salud con tratamientos que mejoran el estado general de la persona y también previenen la enfermedad por medio de un diagnostico oportuno, brindando herramientas que le permitan a la persona ser consciente de sus resultados para que pueda generar los cambios necesarios que transformen su vida de manera integral.
+		
+				.row
+					.col-12.position-relative(data-aos="fade-left") 
+						.swiper-container2
+							.swiper-wrapper
+								.swiper-slide 
+									.card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
+										.position-absolute.img-card
+											img(src="/assets/images/reiki.jpg" class="h-100")
+										.d-flex.align-items-center
+											.col.text-center
+												h6.text-white.text-uppercase.fw-light Terapia
+												h2
+													a(href="" class="text-white stretched-link") Reiki
+								.swiper-slide 
+									.card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
+										.position-absolute.img-card
+											img(src="/assets/images/auroculoterapia.jpg" class="w-100")
+										.d-flex.align-items-center
+											.col.text-center
+												h6.text-white.text-uppercase.fw-light Terapia
+												h2 
+													a(href="" class="text-white stretched-link") Auriculoterapia
+								.swiper-slide 
+									.card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
+										.position-absolute.img-card
+											img(src="/assets/images/masaje.jpg" class="")
+										.d-flex.align-items-center
+											.col.text-center
+												h6.text-white.text-uppercase.fw-light Masaje
+												h2 
+													a(href="" class="text-white stretched-link") Tuna y Maxibustion
+								.swiper-slide 
+									.card.border-0.shadow-light-lg.lift.lift-lg.ratio.ratio-5x4.overlay-black.overlay-20
+										.position-absolute.img-card
+											img(src="/assets/images/filtros.jpg" class="")
+										.d-flex.align-items-center
+											.col.text-center
+												h6.text-white.text-uppercase.fw-light Terapia
+												h2 
+													a(href="" class="text-white stretched-link") con Filtros                       
+							.swiper-pagination.mt-3(style="bottom:initial")
+			.position-absolute.w-100.shape--jarallax-top.d-none.d-sm-block
+				.shape.shape-top.w-100
+					img(src="/assets/images/top-parallax.svg" class="img-fluid")
+		section#parallax.overlay.overlay-black.overlay-40.jarallax(data-jarallax='' data-speed='.8' style='background-image: url(/assets/images/bg-parallax.jpg);')
+			.container.position-relative
+				.row.gx-5.justify-content-center
+					.col-12.col-md-7
+						figure.text-center
+							blockquote.blockquote
+								h6.text-uppercase.mb-3.text-white Poder natural
+								h2.fw-light.text-white.display-6 Este día te regala la oportunidad de
+									span.fw-bold.d-block ser mejor que ayer
+							figcaption.blockquote-footer.text-white
+								| Someone famous in 
+								cite(title='Source Title') Source Title
+			
+		section#talleres.position-relative
+			.container
+				.row.text-center.d-flex.justify-content-center.mb-5
+					h6.text-uppercase.mb-3.fw-normal.text-orange.pt-5.mt-5 Talleres
+					h1.text-white Inicia tu propio 
+						span.fw-bold camino
+					.col-12.col-md-7
+						p.text-white
+							|Todo proceso de sanación y/o aprender a vivir a plenitud implica la realización de un trabajo interior.
+				.row.row-cols-4.g-5
+					.col-sm-3.col-12
+						.card.text-center.position-realtive
+							img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
+							.card-body
+								h6.text-orange.text-uppercase Taller
+								h4.card-title.text-white
+									|Reiki Universal
+								.card-text.text-muted.pb-3
+									|Some quick example text to build on the card title and make up the bulk of the card's content.
+								a(href="" class="text-white stretched-link" )
+									|Ver más
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+					.col-sm-3.col-12
+						.card.text-center.position-realtive
+							img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
+							.card-body
+								h6.text-orange.text-uppercase Taller
+								h4.card-title.text-white
+									|Cristales para sanar
+								.card-text.text-muted.pb-3
+									|Some quick example text to build on the card title and make up the bulk of the card's content.
+								a(href="" class="text-white stretched-link" )
+									|Ver más
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+					.col-sm-3.col-12
+						.card.text-center.position-realtive
+							img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
+							.card-body
+								h6.text-orange.text-uppercase Taller
+								h4.card-title.text-white
+									|Arcángeles y Cristales 
+								.card-text.text-muted.pb-3
+									|Some quick example text to build on the card title and make up the bulk of the card's content.
+								a(href="" class="text-white stretched-link" )
+									|Ver más
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+					.col-sm-3.col-12
+						.card.text-center.position-realtive
+							img(src="/assets/images/icon-taller.svg" width="30" class="mx-auto")
+							.card-body
+								h6.text-orange.text-uppercase Taller
+								h4.card-title.text-white
+									|Cristales para sanar
+								.card-text.text-muted.pb-3
+									|Some quick example text to build on the card title and make up the bulk of the card's content.
+								a(href="" class="text-white stretched-link" )
+									|Ver más
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+			.position-absolute.w-100.shape--jarallax.d-none.d-sm-block
+				.shape.shape-bottom.w-100
+					img(src="/assets/images/bottom-parallax.svg" class="img-fluid")
+		section#agenda
+			.container
+				.row.justify-content-center
+					.col-12.col-md-10.col-lg-8.col-xl-6
+						// Card
+						.card.border-0.shadow-light-lg(data-aos="fade-up")
+							.card-body
+								.row.justify-content-center
+									.col-12.col-xl-11.text-center.pt-5
+										h1.text-purple ¿Tienes 
+											span.fw-bold dudas?
+										// Text
+										p.text-muted
+											|Agenda una cita para atender a tus inquietudes
+								.row.justify-content-center
+									.col-12.col-xl-11.text-center.pb-5
 
+										a(href="" class="btn btn-primary bt-orange")
+											i(class="d-md-inline me-2" data-feather="phone-call") 
+											|Hablar con un experto
 
-                    .col-12.col-md-4(data-aos="fade-up" data-aos-delay="250")
-                        .card.text-center.shadow-light-lg.lift.lift-lg.border-0
-                            img(src="/assets/images/aceites.png")
-                            .card-body
-                                h4.card-title.text-purple.fw-bold
-                                    |Aceites Esenciales Just
-                                p.text-muted
-                                    |Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.
-                                a(href="" class="stretched-link" )
-                                    |Consultar
+		include  pug/template-parts/block-productos.pug
 
 
 
@@ -229,7 +202,7 @@ block contenido
 
 
 
-    
+	
 
 
 
@@ -247,7 +220,7 @@ block contenido
 
 
 
-            
+			
 
 
 
@@ -270,14 +243,14 @@ block contenido
 
 
 
-    
+	
 
-            
+			
 
 
 
-    
+	
 
-            
+			
 
-    
+	

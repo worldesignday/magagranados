@@ -1,0 +1,30 @@
+
+// -----------------------------------------------------------------------------
+// This file contains custom scss page.
+// -----------------------------------------------------------------------------
+
+.entry-content{
+	margin-top: 70px;
+	h1{
+		@include font-set($font, 2.5rem, 700, var(--bs-purple), 0, 1);
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+
+	}
+	sup{
+		font-size: $size-15;
+		margin-right: 0.5rem;
+		font-weight: 700;
+	}
+	h2{
+		margin-top: 2rem;
+		padding-bottom: 0.5rem;
+	}
+	.swiper-pagination{
+		bottom: -2rem;
+		.swiper-pagination-bullet-active{
+			background: var(--bs-purple)
+		}
+	}
+
+}

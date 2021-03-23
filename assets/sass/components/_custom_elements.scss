@@ -9,6 +9,13 @@
 .text-orange{
 	color:var(--bs-orange)
 }
+h1,h2,h3,h4,h5,h6{
+	font-family: $font;
+	color:var(--bs-purple);
+}
+p{
+	color: #6c757d!important;
+}
 h6{
 	&.text-orange{
 		font-size: $size-14;
@@ -28,11 +35,28 @@ h6{
 	}
 
 }
+.bt-orange{
+	background-color:var(--bs-orange);
+	border-color:var(--bs-orange);
+	&:hover{
+		background-color:var(--bs-purple);
+		border-color:var(--bs-purple);
+	}
+}
 
 .shadow-light-lg {
     box-shadow: 0 1.5rem 4rem rgba(22,28,45,.1)!important;
 }
+.d-hidden{
+	overflow: hidden;
+}
 
+.bg-gradient-purple{
+	background: linear-gradient(to bottom,#fff 0 ,rgba(101,18,94,.1)  100%);
+}
+.bg-gradient-orange{
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(245,233,226,.6) 100%);
+}
 //overlay
 .overlay{
 	position: relative;
