@@ -493,7 +493,7 @@ font-size: 15px;
   cursor:pointer;
 }
 
-button {border: none; background: none;}
+button {border: none; background: none !important;}
 button i {
 float: right;
 position: absolute;
