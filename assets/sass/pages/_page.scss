@@ -50,7 +50,7 @@
 			padding-bottom: 0;
 		}
 		.accordion-button{
-			background:var(--bs-orange);
+			background:var(--bs-orange) !important;
 			color: $color-negro-0;
 			font-weight: 500;
 			&.collapsed{

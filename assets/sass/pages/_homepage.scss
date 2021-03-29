@@ -96,6 +96,11 @@
 	    }
 
     }
+    .swiper-pagination{
+		.swiper-pagination-bullet-active{
+			background: var(--bs-purple)
+		}
+	}
 }
 #parallax{
 	padding: 10rem 0;
