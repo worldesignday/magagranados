@@ -4,11 +4,12 @@
 // -----------------------------------------------------------------------------
 
 .text-purple{
-	color:var(--bs-purple)
+	color:var(--bs-purple) !important;
 }
 .text-orange{
-	color:var(--bs-orange)
+	color:var(--bs-orange) !important;
 }
+
 h1,h2,h3,h4,h5,h6{
 	font-family: $font;
 	color:var(--bs-purple);
@@ -53,6 +54,9 @@ h6{
 
 .bg-gradient-purple{
 	background: linear-gradient(to bottom,#fff 0 ,rgba(101,18,94,.1)  100%);
+}
+.bgtop-gradient-purple{
+	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(101,18,94,.1) 100%);
 }
 .bg-gradient-orange{
 	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(245,233,226,.6) 100%);
@@ -137,11 +141,12 @@ h6{
 			a{
 				position:relative;
 				font-size: $size-15;
-				color:$color-negro-60;
+				color:$color-negro-70;
 				font-weight: 400;
 				&:hover{
 					background:none;
-					text-decoration: none
+					text-decoration: none;
+					color:var(--bs-orange);
 				}
 			}
 			a:before,
@@ -151,7 +156,7 @@ h6{
 			  top: 100%;
 			  width: 0;
 			  height: 2px;
-			  background: var(--bs-purple);
+			  background: var(--bs-orange);
 			  transition: .3s;
 			}
 

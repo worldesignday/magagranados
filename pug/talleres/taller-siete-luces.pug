@@ -1,0 +1,58 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends ../page-templates/tpl_page.pug
+
+block title
+	title Maga Granados -  Taller Siete luces para vivir feliz
+
+block contenido
+	.main.bg-white
+		.entry-content.d-hidden.bgtop-gradient-purple
+			.container
+				.row.justify-content-center.py-5
+					.col-md-10.col-xl-8
+						h1.pb-3  Taller Siete luces para vivir feliz
+						.ratio.ratio-16x9
+							picture
+								img(src="https://via.placeholder.com/900x450" class="img-fluid" loading="lazy")
+						p La felicidad es el camino mas no el fin y la ventaja… es que tu cada día la puedes elegir como camino.
+						h2 
+							sup.text-orange 1.
+							|Contenido
+
+						#accordionFlushExample.accordion.open.accordion-flush.pb-1
+							.accordion-item
+								h2#flush-headingOne.accordion-header
+									button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='     flush-collapseOne')
+										| Taller Siete luces para vivir feliz
+
+								#flush-collapseOne.accordion-collapse.collapse.show(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+									.accordion-body.mb-4
+										p.fs-6.fw-bold.text-orange PROPÓSITO
+										p Reconocer el propósito de la experiencia humana y cuales son las llaves maestras para obtener una vida en plenitud.
+										p Descubrir que una vez se ponen en práctica las herramientas,  se alcanza un grado de satisfacción muy alto.
+										p Transformar la vida para convertirla en una gran experiencia de crecimiento, paz y felicidad. 
+										p.fs-6.fw-bold.text-purple.border-top.mt-3.pt-3 TEMARIO
+										ol.temas
+											li Conocimiento sobre cada una de las luces que te permitirán vivir desde la felicidad
+											li Reconocimiento práctico de cada una de ellas en la vida cotidiana
+											li Aplicabilidad en diferentes situaciones.
+
+
+
+			include  ../template-parts/block-form.pug
+			.container
+				.row.justify-content-center
+					.col-md-10.col-xl-8.border-bottom.pb-5
+						.row.justify-content-between
+							.col-6.col-md-6.position-relative
+								a(href="/pages/talleres/taller-arcangeles-y-cristales.html" class="nav-next stretched-link")
+									i(class="d-md-inline" data-feather="arrow-left")
+									|anterior
+								h3 Taller Arcángeles y Cristales
+							.col-6.col-md-6.text-end.position-relative
+
+			include  ../template-parts/block-productos.pug

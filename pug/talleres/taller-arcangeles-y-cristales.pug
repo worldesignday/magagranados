@@ -1,0 +1,62 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends ../page-templates/tpl_page.pug
+
+block title
+	title Maga Granados - Taller  Arcángeles y Cristales
+
+block contenido
+	.main.bg-white
+		.entry-content.d-hidden.bgtop-gradient-purple
+			.container
+				.row.justify-content-center.py-5
+					.col-md-10.col-xl-8
+						h1.pb-3 Taller  Arcángeles y Cristales
+						.ratio.ratio-16x9
+							picture
+								img(src="https://via.placeholder.com/900x450" class="img-fluid" loading="lazy")
+
+						h2 
+							sup.text-orange 1.
+							|Contenido
+
+						#accordionFlushExample.accordion.open.accordion-flush.pb-1
+							.accordion-item
+								h2#flush-headingOne.accordion-header
+									button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='     flush-collapseOne')
+										| Taller Cristales para Sanar
+
+								#flush-collapseOne.accordion-collapse.collapse.show(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+									.accordion-body.mb-4
+										p.fs-6.fw-bold.text-orange PROPÓSITO
+										p Conoce sobre la función de los arcángeles y cristales y conecta con su energía por medio de diferentes técnicas para que puedas armonizar y sanar tú Ser.
+										p.fs-6.fw-bold.text-purple.border-top.mt-3.pt-3 TEMARIO
+										ol.temas
+											li <b>Campo energético:</b> cuerpos sutiles
+											li <b>Cristales:</b> estructura molecular, geometría y color.
+											li Limpieza y purificación de los cristales
+											li Chacras y cristales: aspectos que trabajan en cada uno.
+											li Disposición de los cristales sobre el cuerpo.
+											li Trabajo terapéutico.
+
+
+			include  ../template-parts/block-form.pug
+			.container
+				.row.justify-content-center
+					.col-md-10.col-xl-8.border-bottom.pb-5
+						.row.justify-content-between
+							.col-6.col-md-6.position-relative
+								a(href="/pages/talleres/taller-cristales-para-sanar.html" class="nav-next stretched-link")
+									i(class="d-md-inline" data-feather="arrow-left")
+									|anterior
+								h3 Cristales para sanar
+							.col-6.col-md-6.text-end.position-relative
+								a(href="/pages/talleres/taller-siete-luces.html" class="nav-next stretched-link")
+									|siguiente
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+								h3 Siete luces para vivir feliz
+
+			include  ../template-parts/block-productos.pug

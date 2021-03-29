@@ -29,6 +29,21 @@ block contenido
 
 
 			include  ../template-parts/block-form.pug
+			.container
+				.row.justify-content-center
+					.col-md-10.col-xl-8.border-bottom.pb-5
+						.row.justify-content-between
+							.col-6.col-md-3.position-relative
+								a(href="/pages/servicios/terapia-reiki.html" class="nav-next stretched-link")
+									i(class="d-md-inline" data-feather="arrow-left")
+									|anterior
+								h3 Terapia Reiki
+							.col-6.col-md-3.text-end.position-relative
+								a(href="/pages/servicios/auriculoterapia.html" class="nav-next stretched-link")
+									|siguiente
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+								h3 Auriculoterapia
+
 			include  ../template-parts/block-productos.pug
 
 

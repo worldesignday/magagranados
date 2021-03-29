@@ -1,0 +1,64 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends ../page-templates/tpl_page.pug
+
+block title
+	title Maga Granados - Taller Cristales para Sanar
+
+block contenido
+	.main.bg-white
+		.entry-content.d-hidden.bgtop-gradient-purple
+			.container
+				.row.justify-content-center.py-5
+					.col-md-10.col-xl-8
+						h1.pb-3 Taller Cristales para Sanar
+						.ratio.ratio-16x9
+							picture
+								img(src="https://via.placeholder.com/800x450" class="img-fluid" loading="lazy")
+
+						p.mb-5 Los Cristales son minerales que albergan toda la información de la humanidad; tienen una elevada frecuencia vibratoria; cuando entras en contacto con ellos te va permitir expandir tú energía para salir del miedo y de aquellas emociones y/o pensamientos que te bloquean; de esa manera podrás conectar con tú verdadero potencial para lograr lo mejor para ti.
+
+						h2 
+							sup.text-orange 1.
+							|Contenido
+
+						#accordionFlushExample.accordion.open.accordion-flush.pb-1
+							.accordion-item
+								h2#flush-headingOne.accordion-header
+									button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='     flush-collapseOne')
+										| Taller Cristales para Sanar
+
+								#flush-collapseOne.accordion-collapse.collapse.show(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+									.accordion-body.mb-4
+										p.fs-6.fw-bold.text-orange PROPÓSITO
+										p Conocer qué son los cristales a nivel físico y energético, como ha sido su utilidad en la historia del ser humano, y reconocer cuales son las posibilidades que brindan en los procesos de sanación a nivel físico, emocional, mental y espiritual. 
+										p.fs-6.fw-bold.text-purple.border-top.mt-3.pt-3 TEMARIO
+										ol.temas
+											li <b>Campo energético:</b> cuerpos sutiles
+											li <b>Cristales:</b> estructura molecular, geometría y color.
+											li Limpieza y purificación de los cristales
+											li Chacras y cristales: aspectos que trabajan en cada uno.
+											li Disposición de los cristales sobre el cuerpo.
+											li Trabajo terapéutico.
+
+
+			include  ../template-parts/block-form.pug
+			.container
+				.row.justify-content-center
+					.col-md-10.col-xl-8.border-bottom.pb-5
+						.row.justify-content-between
+							.col-6.col-md-6.position-relative
+								a(href="/pages/talleres/taller-reiki-universal.html" class="nav-next stretched-link")
+									i(class="d-md-inline" data-feather="arrow-left")
+									|anterior
+								h3 Taller Reiki Universal
+							.col-6.col-md-6.text-end.position-relative
+								a(href="/pages/talleres/taller-arcangeles-y-cristales.html" class="nav-next stretched-link")
+									|siguiente
+									i(class="d-md-inline ms-1" data-feather="arrow-right")
+								h3 Taller Arcángeles y Cristales
+
+			include  ../template-parts/block-productos.pug

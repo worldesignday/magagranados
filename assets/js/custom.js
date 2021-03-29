@@ -42,3 +42,23 @@ var swiper = new Swiper('.swiper-container2', {
     },
   },
 });
+$(function() {
+  var topoffset = 70; //variable for menu height
+
+  //Use smooth scrolling when clicking on navigation
+  $('.nav-item a').click(function() {
+    if (location.pathname.replace(/^\//,'') === 
+      this.pathname.replace(/^\//,'') && 
+      location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-topoffset
+        }, 900);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
+
+});
