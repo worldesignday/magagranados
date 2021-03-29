@@ -1,16 +1,16 @@
 .trwpwhatsappall
   .trwpwhatsappballon.border.pb-2.bg-white
     span#kapatac.kapat X
-    .trwpwhatsapptitle.pe-5
-      | ¿Estás interesado en una terapia o taller? 
+    .trwpwhatsapptitle.pe-5.lh-sm
+      | ¿Estás interesado en una terapia,taller o producto? 
     .trwpwhatsappmessage.fw-normal
       |Cuéntame que inquietud tienes
     .trwpwhatsappinput
-      form(action='https://web.whatsapp.com/send?' method='get' target='_blank')
-        input(type='text' name='phone' value='573106565656' hidden='')
-        input(type='text' name='text' placeholder='Inicia una conversación' autocomplete='off')
-        button.trwpwhatsappsendbutton(type='submit')
-          //i(class="d-md-inline me-2" data-feather="send")
+      form(action='https://web.whatsapp.com/send?' method='get' target='_blank' class="d-flex")
+        input(type='text' name='phone' value='573102062328' hidden='')
+        input(type='text' name='text' placeholder='Inicia una conversación' autocomplete='off' class="w-100 pe-5")
+        button.trwpwhatsappsendbutton.position-relative(type='submit')
+         i(class="d-md-inline position-absolute" style="right:2rem;top:10px" data-feather="send")
 
   #ackapa.trwpwhatsappbutton
     span ¿Tienes dudas?
